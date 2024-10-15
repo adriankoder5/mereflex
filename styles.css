@@ -91,3 +91,24 @@ h1 {
 .cardimg {
   width: 50%;
 }
+
+.rotate{
+  position: relative;
+  animation-name: rotate;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+.flashB{
+  animation-name: flash;
+  animation-duration: 2s;
+}
+@keyframes flash{
+  0%{background-color: black;}
+  99.9%{background-color: black;}
+  to{background-color: white;}
+}
+@keyframes rotate {
+  from {left:0%}
+  99%{rotate:600deg;left:50%;opacity: 1;}
+  to { rotate: 600deg;left:50%;opacity: 0;}
+}
