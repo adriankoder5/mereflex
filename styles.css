@@ -96,19 +96,59 @@ h1 {
   position: relative;
   animation-name: rotate;
   animation-duration: 2s;
-  animation-fill-mode: forwards;
+  animation-fill-mode: both;
+  animation-delay: 1s;
 }
 .flashB{
   animation-name: flash;
   animation-duration: 2s;
+  animation-fill-mode: backwards;
+  animation-delay: 1s;
 }
-@keyframes flash{
+@keyframes flash{/*bakgrunsflash*/
   0%{background-color: black;}
   99.9%{background-color: black;}
   to{background-color: white;}
 }
-@keyframes rotate {
-  from {left:0%}
+@keyframes rotate {/*flashbanggranade*/
+  from {left:-10%}
   99%{rotate:600deg;left:50%;opacity: 1;}
   to { rotate: 600deg;left:50%;opacity: 0;}
+}
+@keyframes hideY{/*nav synlighet*/
+  from{opacity: 0;}
+  99%{opacity: 0;}
+  to{opacity: 1;}
+}
+.page2nav{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+.navApg2{
+  display: inline-block;
+  min-width: 9rem;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  border: solid 1px #aaa;
+  text-align: center;
+  text-decoration: none;
+  color: #555;
+  animation-name: hideY;
+  animation-duration: 2s;
+  opacity: 1;
+  animation-fill-mode: backwards;
+  animation-delay: 1s;
+}
+.navApg2[aria-current='page'] {
+  color: #a05d5d;
+  background-color: rgba(212, 212, 212, 0);
+  animation-name: hideY;
+  animation-duration: 2s;
+  opacity: 1;
+  animation-fill-mode: backwards;
+  animation-delay: 1s;
 }
