@@ -71,11 +71,21 @@ h1 {
 
 .secondSection {
   height: 100vh;
+  background-color: rgb(229, 155, 155);
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
   flex-flow: row;
+  animation-name: colorchange;
+  animation-duration: 80s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes colorchange{
+  0%{background-color: rgb(250, 158, 158);}
+  50%{background-color:rgb(229, 181, 155);}
+  100%{background-color:rgb(229, 155, 196);}
 }
 
 .secondSection >div{
