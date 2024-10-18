@@ -75,12 +75,14 @@ h1 {
   justify-content: center;
   align-items: center;
   gap: 20px;
+  flex-flow: row;
 }
 
-.secondSection > div {
+.secondSection >div{
   width: 500px;
   border: 2px solid #000;
   display: flex;
+  flex-flow: row;
 }
 
 .cardtxt {
@@ -92,6 +94,7 @@ h1 {
   width: 50%;
 }
 
+/*side2*/
 .rotate{
   position: relative;
   animation-name: rotate;
@@ -144,7 +147,7 @@ h1 {
   animation-delay: 1s;
 }
 .navApg2[aria-current='page'] {
-  color: #a05d5d;
+  color: #555;
   background-color: rgba(212, 212, 212, 0);
   animation-name: hideY;
   animation-duration: 2s;
