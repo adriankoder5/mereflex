@@ -130,8 +130,8 @@ h1 {
 }
 @keyframes rotate {/*flashbanggranade*/
   from {left:-50%}
-  99%{rotate:900deg;left:50%;opacity: 1;}
-  to { rotate: 900deg;left:50%;opacity: 0;}
+  99%{rotate:980deg;left:50%;opacity: 1;}
+  to { rotate: 980deg;left:50%;opacity: 0;}
 }
 @keyframes hideY{/*nav synlighet*/
   from{opacity: 0;}
